@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Technologies</title>
+  <link rel="shortcut icon" th:href="@{/pictures/logo_site.ico}" type="image/x-icon">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+  <link rel="stylesheet" th:href="@{/css/style.css}" />
+
+</head>
+
+<body>
+
+  <main id="swup" class="transition-fade">
+
+    <header class="header">
+      <span class="logo"><a th:href = "@{/en}">Main</a></span>
+      <span class="logo"><a th:href = "@{/en/experience}">Experience</a></span>
+      <span class="logo"><a th:href = "@{/en/stack}">Technologies</a></span>
+      <span class="logo"><a th:href = "@{/en/education}">Education</a></span>
+      <span class="logo"><a th:href = "@{/ru}">Ru</a></span>
+    </header>
+
+    <div class="hero">
+      <div class="container hero__container">
+        <div class="hero__about">
+          <h1 class="hero__title">Java</h1>
+          <h2 class="hero__subtitle">Spring boot</h2>
+          <p class="hero__description">
+            Gitlab, GitHub, Gerrit, Maven, Gradle, Lombok, Tomcat, JDBC,
+            PostgreSQL, MySQL, Cassandra, Hibernate, Feign, k8s,
+            Jenkins, OpenShift, Docker, JUnit, PowerMockito, Agile, Scrum
+          </p>
+
+
+        </div>
+
+        <div class="hero__box__green">
+          <img class="hero__box-img" th:src="@{/pictures/logo/spring_logo.png}" alt="">
+        </div>
+
+      </div>
+
+    </div>
+
+  </main>
+
+
+</body>
+
+</html>
