@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Experience</title>
+  <link rel="shortcut icon" th:href="@{/pictures/logo_site.ico}" type="image/x-icon">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+  <link rel="stylesheet" th:href="@{/css/style.css}" />
+
+</head>
+
+<body>
+
+  <main id="swup" class="transition-fade">
+
+    <header class="header">
+      <span class="logo"><a th:href = "@{/en}">Main</a></span>
+      <span class="logo"><a th:href = "@{/en/experience}">Experience</a></span>
+      <span class="logo"><a th:href = "@{/en/stack}">Technologies</a></span>
+      <span class="logo"><a th:href = "@{/en/education}">Education</a></span>
+      <span class="logo"><a th:href = "@{/ru}">Ru</a></span>
+    </header>
+
+    <div class="epam">
+      <div class="hero">
+        <div class="container hero__container">
+          <div class="hero__about">
+            <h1 class="hero__title">EPAM Systems</h1>
+            <h2 class="hero__subtitle">Software Engineer</h2>
+            <p class="hero__description">
+              Support and refinement of FinTech microservices;
+            </p>
+            <p class="hero__description">
+              Demo for developed features;
+            </p>
+            <p class="hero__description">
+              Unit tests.
+            </p>
+
+
+          </div>
+
+          <div class="hero__box">
+            <img class="hero__box-img" th:src="@{/pictures/logo/epam_logo.png}" alt="">
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="oniip">
+      <div class="hero">
+        <div class="container hero__container">
+          <div class="hero__about">
+            <h1 class="hero__title">АО "ОНИИП"</h1>
+            <h2 class="hero__subtitle">Инженер программист</h2>
+            <p class="hero__description">
+              Configuration of Vaadin with Spring project;
+            </p>
+            <p class="hero__description">
+              Libraries for managing calls between terminals, SSH and Excel parsing;
+            </p>
+            <p class="hero__description">
+              Desktop application for base station configuration;
+            </p>
+            <p class="hero__description">
+              Bash scripts for automatization and software installation.
+            </p>
+
+
+          </div>
+
+          <div class="hero__box">
+            <img class="hero__box-img" th:src="@{/pictures/logo/oniip_logo.png}" alt="">
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </main>
+
+</body>
+
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Главная</title>
+  <link rel="shortcut icon" th:href="@{/pictures/logo_site.ico}" type="image/x-icon">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+  <link rel="stylesheet" th:href="@{/css/style.css}" />
+
+</head>
+
+<body>
+
+  <main id="swup" class="transition-fade">
+
+    <header class="header">
+      <span class="logo"><a th:href = "@{/ru}">Главная</a></span>
+      <span class="logo"><a th:href = "@{/ru/experience}">Опыт</a></span>
+      <span class="logo"><a th:href = "@{/ru/stack}">Технологии</a></span>
+      <span class="logo"><a th:href = "@{/ru/education}">Образование</a></span>
+      <span class="logo"><a th:href = "@{/en}" onclick="firstLoad = true; ">En</a></span>
+    </header>
+
+    <div class="hero">
+      <div class="container hero__container">
+        <div class="hero__about">
+          <h1 class="hero__title">Java-разработчик</h1>
+          <h2 class="hero__subtitle">Азамат Сегизбаев</h2>
+          <p class="hero__description">
+            Я Java разработчик, который готов постоянно учиться и выполнять поставленные задачи в команде.
+          </p>
+
+          <div class="hero__links">
+            <a class="hero__link" href="https://vk.com/kirimatt" target="_blank"><i class='bx bxl-vk'></i></a>
+            <a class="hero__link" href="https://t.me/kirimatt"><i class='bx bxl-telegram'></i></a>
+            <a class="hero__link" href="https://www.linkedin.com/in/azamat-segizbaev-341637227/"><i class='bx bxl-linkedin'></i></a>
+            <a class="hero__link" href="https://github.com/Kirimatt/"><i class='bx bxl-github'></i></a>
+          </div>
+
+        </div>
+
+        <div class="hero__box">
+          <img class="hero__box-img" th:src="@{/pictures/photo_of_me.png}" alt="">
+        </div>
+
+      </div>
+
+    </div>
+
+  </main>
+
+  <script th:src="@{/js/swup.min.js}"></script>
+  <script>
+    swup = new Swup();
+  </script>
+</body>
+
+</html>
