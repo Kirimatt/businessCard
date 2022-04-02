@@ -119,7 +119,7 @@ html.is-animating .transition-fade {
 
 .logo {
   margin-right: 10px;
-  font-size: calc(0.35em + 1vw);
+  font-size: calc(0.30em + 1vw);
   font-weight: 400;
   text-decoration: none;
   color: #000;
