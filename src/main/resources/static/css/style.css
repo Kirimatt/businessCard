@@ -52,13 +52,21 @@ html.is-animating .transition-fade {
   display: block;
   color: #f2f2f2;
   text-align: center;
-  padding: 14px 16px;
+  padding: 10px max(2em, 1.25vw);
   text-decoration: none; 
 }
 
 .header a:hover { 
   background: #ddd;
   color: black; 
+}
+
+.logo {
+  margin-right: max(0.1em, 0.2vw);
+  font-size: max(0.5em, 1vw);
+  font-weight: 500;
+  text-decoration: none;
+  color: #000;
 }
 
 .hero {
@@ -116,15 +124,6 @@ html.is-animating .transition-fade {
   font-size: 30px;
   color: #000;
 }
-
-.logo {
-  margin-right: 10px;
-  font-size: calc(0.10em + 1.25vw);
-  font-weight: 500;
-  text-decoration: none;
-  color: #000;
-}
-
 
 .hero__link:hover {
   color: #4facfe;
